@@ -3,16 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DemoMaterialModule } from './material/material.module';
+import {  MaterialModule } from './material/material.module';
+import { MenuBarComponent } from './common/menu-bar/menu-bar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MenuBarComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    DemoMaterialModule
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
