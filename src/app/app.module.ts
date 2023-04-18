@@ -10,6 +10,8 @@ import { AboutComponent } from './pages/about/about.component';
 import { TestimonialComponent } from './pages/testimonial/testimonial.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+import { ContactBoxComponent } from './pages/contact/contact-box/contact-box.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +20,15 @@ import { AppRoutingModule } from './app-routing.module';
     HomeComponent,
     AboutComponent,
     TestimonialComponent,
-    ContactComponent
+    ContactComponent,
+    ContactBoxComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
