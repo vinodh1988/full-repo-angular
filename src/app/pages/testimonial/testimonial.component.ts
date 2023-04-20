@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { FeedbackService } from 'src/app/services/feedback.service';
 
 @Component({
   selector: 'app-testimonial',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./testimonial.component.css']
 })
 export class TestimonialComponent {
+  feedbacks:any
 
+        constructor(private fs:FeedbackService)  {
+           this.fs.getFeedbacks().subscribe(
+              {
+                  next : (data:any)=> this.feedbacks =data
+              }
+           )
+        }
 }
