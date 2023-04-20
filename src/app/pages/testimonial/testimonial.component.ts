@@ -8,7 +8,16 @@ import { FeedbackService } from 'src/app/services/feedback.service';
 })
 export class TestimonialComponent {
   feedbacks:any
-
+  types:string[]=[
+    "All",
+    "Branding and Communication",
+    "Inbound & Content Marketing",
+    "Film & Webinar","Digital Marketing",
+    "ECommerce & Websites",
+    "Market Analysis"
+  ]
+  selected:string="All"
+  
         constructor(private fs:FeedbackService)  {
            this.fs.getFeedbacks().subscribe(
               {

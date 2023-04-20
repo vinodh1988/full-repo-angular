@@ -1,3 +1,8 @@
 <h2 [style.color]="'darkgray'" [style.padding]="'20px'">
     Our Customer Feedbacks</h2>
-<app-feedback-box *ngFor="let x of feedbacks" [feedback]="x"></app-feedback-box>
+<select [(ngModel)]="selected">
+    <option *ngFor="let x of types">{{x}}</option>
+</select><br/>
+<app-feedback-box 
+*ngFor="let x of feedbacks | typefilter:selected"
+ [feedback]="x"></app-feedback-box>
