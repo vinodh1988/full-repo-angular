@@ -3,7 +3,7 @@
       <mat-card-title class="txt"><h3>{{feedback.name |uppercase }} said ...</h3></mat-card-title>
     </mat-card-header>
     <mat-card-content class="txt">
-      <p class="par">{{feedback.message}}</p>
+      <p class="par">{{feedback.message | quoteit}}</p>
       <mat-divider></mat-divider>
       <p class="tp">{{feedback.type}}</p>
     </mat-card-content>

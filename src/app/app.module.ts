@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ContactBoxComponent } from './pages/contact/contact-box/contact-box.component';
 import { ServiceBoxComponent } from './pages/home/service-box/service-box.component';
 import { FeedbackBoxComponent } from './pages/testimonial/feedback-box/feedback-box.component';
+import { QuoteitPipe } from './pipes/quoteit.pipe';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FeedbackBoxComponent } from './pages/testimonial/feedback-box/feedback-
     ContactComponent,
     ContactBoxComponent,
     ServiceBoxComponent,
-    FeedbackBoxComponent
+    FeedbackBoxComponent,
+    QuoteitPipe
   ],
   imports: [
     BrowserModule,
