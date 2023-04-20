@@ -1,0 +1,29 @@
+Pipes is an angular feature 
+   
+   that is usually used in the template within the interpolation
+   expression
+
+   it is applied on a target variable which is either scalar
+   or a collection
+
+   angular offers inbuilt pipes that can be applied on scalar variables
+   only
+
+   for applying on arrays you need to define your own pipes
+
+   Generally
+   
+   pipe if applied on scalar target it formats the target
+
+   {{name | uppercase }} - converts the name into uppercase
+   {{price | currency:'USD'}} - prints price as $350.00 if price is 350
+
+   in the aboves cases you could see a pipe expression has three parts
+
+   1. target variable
+   2. pipe name
+   3. parameters [optional
+   
+   pipe if applied on array target usually it filters the target
+   , we have to define our own pipe to apply on arrays
+
