@@ -21,4 +21,29 @@ types:string[]=["Branding and Communication","Inbound & Content Marketing","Film
           type:['Branding and Communication']
         });
        }
+
+       saveFeedback(){
+
+        
+        var temp:any={
+          id: Math.round(Math.random()*10000),
+          name: this.feedbackForm.value.name,
+          email: this.feedbackForm.value.email,
+          type:this.feedbackForm.value.type,
+          message:this.feedbackForm.value.message
+        
+        }
+        this.fs.postFeedback(temp).subscribe(
+         { 
+          next: data=>{
+            alert('Your Feedback is saved')
+            location.reload();
+          },
+          error:(error)=>alert('Not saved ---some Error')
+        }
+    
+        )
+    
+      }
+    
 }
