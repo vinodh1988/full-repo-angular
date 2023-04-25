@@ -1,4 +1,6 @@
+
 import { Component,Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-service-box',
@@ -7,4 +9,5 @@ import { Component,Input } from '@angular/core';
 })
 export class ServiceBoxComponent {
   @Input() service:any;
+
 }

@@ -13,4 +13,12 @@ export class HomeService {
      return this.http.get("http://localhost:4500/services");
 
   }
+
+  getDetails(id:number):Observable<any>{
+    return this.http.get("http://localhost:4500/details/"+id)
+  }
+
+  getServiceById(id:number):Observable<any>{
+    return this.http.get("http://localhost:4500/services/"+id)
+  }
 }

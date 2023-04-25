@@ -18,6 +18,7 @@ import { QuoteitPipe } from './pipes/quoteit.pipe';
 import { FormsModule } from '@angular/forms';
 import { TypefilterPipe } from './pipes/typefilter.pipe';
 import { EnqiryFormComponent } from './pages/home/enqiry-form/enqiry-form.component';
+import { DetailsComponent } from './pages/home/details/details.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { EnqiryFormComponent } from './pages/home/enqiry-form/enqiry-form.compon
     FeedbackBoxComponent,
     QuoteitPipe,
     TypefilterPipe,
-    EnqiryFormComponent
+    EnqiryFormComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
