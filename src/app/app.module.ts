@@ -15,10 +15,11 @@ import { ContactBoxComponent } from './pages/contact/contact-box/contact-box.com
 import { ServiceBoxComponent } from './pages/home/service-box/service-box.component';
 import { FeedbackBoxComponent } from './pages/testimonial/feedback-box/feedback-box.component';
 import { QuoteitPipe } from './pipes/quoteit.pipe';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TypefilterPipe } from './pipes/typefilter.pipe';
 import { EnqiryFormComponent } from './pages/home/enqiry-form/enqiry-form.component';
 import { DetailsComponent } from './pages/home/details/details.component';
+import { FeedbackFormComponent } from './pages/testimonial/feedback-form/feedback-form.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { DetailsComponent } from './pages/home/details/details.component';
     QuoteitPipe,
     TypefilterPipe,
     EnqiryFormComponent,
-    DetailsComponent
+    DetailsComponent,
+    FeedbackFormComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +44,8 @@ import { DetailsComponent } from './pages/home/details/details.component';
     AppRoutingModule,
     MaterialModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

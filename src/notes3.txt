@@ -51,3 +51,10 @@ for(let x of strings)
 		console.log(x)
 }
 
+Model Based Approach
+
+1. We handle this with a service called form builder
+2. we can group form fields, we can use inbuilt validation, 
+if required you can also custom validators
+
+To use this approache we need reactive forms module
