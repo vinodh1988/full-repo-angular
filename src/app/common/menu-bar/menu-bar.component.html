@@ -1,9 +1,15 @@
 <mat-toolbar class="menu-bar">
   <span class="title"> ABC Tech</span> 
   <ul>
-    <li><a routerLink="/">Home</a></li>
-    <li><a routerLink="/about">About us</a></li>
-    <li><a routerLink="/testimonials">Testimonials</a></li>
-    <li><a routerLink="/reachus">Reach Us</a></li>
+    <li><a routerLink="/">{{"menubar.home" | translate}}</a></li>
+    <li><a routerLink="/about">{{"menubar.about" | translate}}</a></li>
+    <li><a routerLink="/testimonials">{{"menubar.testimonial" | translate}}</a></li>
+    <li><a routerLink="/reachus">{{"menubar.reach" | translate}}</a></li>
   </ul>
+  <span [style.marginLeft]="'100px'" [style.color]="'white'">
+     <select [(ngModel)]="lang" (change)="changeLang()">
+        <option *ngFor="let x of languages" value={{x.value}}>
+          {{x.name}}</option>
+     </select>
+  </span>
 </mat-toolbar>
